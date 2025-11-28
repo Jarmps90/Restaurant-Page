@@ -1,18 +1,21 @@
-body{
-    background-color: aqua;
-    
-}
-
 #content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     margin-top: 20px;
-    
 }
 
-.introtuction {
-    grid-row: 2 / 3;
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+}
+
+.home {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.menu {
     grid-column: 2 / 3;
 }
