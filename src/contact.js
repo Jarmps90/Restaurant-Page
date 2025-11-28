@@ -15,13 +15,16 @@ function contactPage() {
   const mainDiv = document.createElement("div");
   const contactTitle = document.createElement("h1");
   const contactDiv = document.createElement("div");
+  const nameDiv = document.createElement("div");
+  const telDiv = document.createElement("div");
+  const mailDiv = document.createElement("div");
 
   content.innerHTML = "";
 
   mainDiv.classList.add("mainDiv");
   contactDiv.classList.add("contactDiv");
-  contactDiv.textContent =
-    "Jarms Backburn, 1-162-821-4747, jarms.backburn@protonmail.ca";
+
+  // "Jarms Backburn, 1-162-821-4747, jarms.backburn@protonmail.ca"
   contactTitle.textContent = "Contact Us";
 
   content.appendChild(mainDiv);
