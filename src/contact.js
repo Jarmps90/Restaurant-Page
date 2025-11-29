@@ -23,11 +23,19 @@ function contactPage() {
 
   mainDiv.classList.add("mainDiv");
   contactDiv.classList.add("contactDiv");
+  nameDiv.classList.add("name");
+  telDiv.classList.add("tel");
+  mailDiv.classList.add("mail");
 
-  // "Jarms Backburn, 1-162-821-4747, jarms.backburn@protonmail.ca"
+  nameDiv.textContent = "Name: Jarms Backburn";
+  telDiv.textContent = "Telephone: 1-162-821-4747";
+  mailDiv.textContent = "E-mail: jarms.backburn@protonmail.ca";
   contactTitle.textContent = "Contact Us";
 
   content.appendChild(mainDiv);
   mainDiv.appendChild(contactTitle);
   mainDiv.appendChild(contactDiv);
+  contactDiv.appendChild(nameDiv);
+  contactDiv.appendChild(telDiv);
+  contactDiv.appendChild(mailDiv);
 }
