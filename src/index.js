@@ -1,6 +1,7 @@
 import "./main.css";
 import "./menu.js";
 import "./contact.js";
+import './about.js';
 
 const homeButton = (function () {
   const navBar = document.querySelector("nav");
