@@ -1,9 +1,7 @@
 #content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     margin-top: 20px;
+    justify-items: center;
 }
 
 nav {
@@ -11,6 +9,12 @@ nav {
     grid-template-columns: repeat(4, minmax(50px, 80px));
 }
 
+
+.text {
+
+    width: 400px;
+    justify-self: center;
+}
 .home {
     grid-column: 1 / 2;
     grid-row: 1 / 2;

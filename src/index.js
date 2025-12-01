@@ -3,6 +3,7 @@ import "./menu.js";
 import "./contact.js";
 import './about.js';
 
+
 const homeButton = (function () {
   const navBar = document.querySelector("nav");
   const homeBtn = document.createElement("button");
@@ -25,7 +26,7 @@ function generateIndexPage() {
   titleDiv.classList.add("title");
   textDiv.classList.add("text");
 
-  titleDiv.textContent = "Welcome to our restaurant page";
+  titleDiv.textContent = "Welcome to Beef n resto";
   textDiv.textContent =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia praesentium quod fugiat explicabo animi ut quaerat ullam. Voluptas sed exercitationem excepturi qui quae quaerat ipsum cumque sunt doloremque velit!";
 
