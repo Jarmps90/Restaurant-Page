@@ -28,7 +28,7 @@ function generateIndexPage() {
 
   titleDiv.textContent = "Welcome to Beef n resto";
   textDiv.textContent =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia praesentium quod fugiat explicabo animi ut quaerat ullam. Voluptas sed exercitationem excepturi qui quae quaerat ipsum cumque sunt doloremque velit!";
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia praesentium quod fugiat explicabo animi ut quaerat ullam. Voluptas sed exercitationem excepturi qui quae quaerat ipsum cumque sunt doloremque velit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio tenetur fuga dolor quidem recusandae earum temporibus quam cupiditate exercitationem.";
 
   content.appendChild(titleDiv);
   content.appendChild(textDiv);
