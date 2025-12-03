@@ -8,14 +8,36 @@ header {
 
 nav {
     display: grid;
-    grid-template-columns: repeat(4, minmax(50px, 80px));
-    justify-self: center;
+    grid-template-columns: repeat(4, minmax(80px, 150px));
+    justify-content: center;
     margin-bottom: 50px;
+    height: 6vh;
+    width: 100%;
+    background-image: url(/src/resorces/sergey-kotenev-qXrrbHUzmkE-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+nav > button {
+    border: none;
+    background-image: url(/src/resorces/sergey-kotenev-qXrrbHUzmkE-unsplash.jpg);
+    background-position: bottom;
+    background-size: 400%;
+    box-shadow: 1px 0 2px gray;
+    color: white;
+    font-size: 1.5rem;
+
 }
 
 .sticky {
     position: fixed;
     top: 0;
+    background: gray;
+
+    button {
+        background: gray;
+    }
 }
 
 
