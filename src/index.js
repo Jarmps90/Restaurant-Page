@@ -20,6 +20,8 @@ function generateIndexPage() {
   const content = document.querySelector("#content");
   const titleDiv = document.createElement("h1");
   const textDiv = document.createElement("div");
+  const firstHalf = document.createElement('p');
+  const secondHalf = document.createElement('p');
 
   content.innerHTML = "";
 
@@ -27,11 +29,14 @@ function generateIndexPage() {
   textDiv.classList.add("text");
 
   titleDiv.textContent = "Welcome to Beef n resto";
-  textDiv.textContent =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia praesentium quod fugiat explicabo animi ut quaerat ullam. Voluptas sed exercitationem excepturi qui quae quaerat ipsum cumque sunt doloremque velit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio tenetur fuga dolor quidem recusandae earum temporibus quam cupiditate exercitationem.";
+  firstHalf.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia praesentium quod fugiat explicabo animi ut quaerat ullam. Voluptas sed exercitationem excepturi qui quae quaerat ipsum cumque sunt doloremque velit!'
+  secondHalf.textContent = ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio tenetur fuga dolor quidem recusandae earum temporibus quam cupiditate exercitationem.';
+
 
   content.appendChild(titleDiv);
   content.appendChild(textDiv);
+  textDiv.appendChild(firstHalf);
+  textDiv.appendChild(secondHalf);
 }
 
 function stickyNav() {
