@@ -13,17 +13,13 @@ const menuButton = (function () {
 function menuPage() {
   const content = document.querySelector("#content");
   const title = document.createElement("h1");
-  const menuSides = document.createElement("div");
-  const sidesTitle = document.createElement("h2");
+  const menuDishes = document.createElement("div");
 
-  title.classList.add("title");
   title.textContent = "Menu";
-  menuSides.classList.add("sides");
-  sidesTitle.textContent = "Side dishes";
+  menuDishes.classList.add("dishes");
 
   content.innerHTML = "";
 
   content.appendChild(title);
-  content.appendChild(menuSides);
-  menuSides.appendChild(sidesTitle);
-}
+  content.appendChild(menuDishes);
+};
