@@ -51,6 +51,7 @@ function createDish() {
 
       outerDiv.classList.add('outer');
       innerDiv.classList.add('inner');
+      img.classList.add('img');
       title.textContent = dishes[i].title;
       text.textContent = dishes[i].text
 
