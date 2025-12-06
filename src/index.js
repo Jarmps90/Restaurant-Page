@@ -18,21 +18,25 @@ const homeButton = (function () {
 
 function generateIndexPage() {
   const content = document.querySelector("#content");
+  const header = document.querySelector('header');
   const titleDiv = document.createElement("h1");
   const textDiv = document.createElement("div");
   const firstHalf = document.createElement('p');
   const secondHalf = document.createElement('p');
+  const logoDiv = document.createElement('div');
 
   content.innerHTML = "";
 
   titleDiv.classList.add("title");
   textDiv.classList.add("text");
+  logoDiv.classList.add('logo');
 
+  logoDiv.textContent = 'It’s time to enjoy the finer things in life.'
   titleDiv.textContent = "Welcome to Beef n resto";
   firstHalf.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia praesentium quod fugiat explicabo animi ut quaerat ullam. Voluptas sed exercitationem excepturi qui quae quaerat ipsum cumque sunt doloremque velit!'
   secondHalf.textContent = ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio tenetur fuga dolor quidem recusandae earum temporibus quam cupiditate exercitationem.';
 
-
+  header.appendChild(logoDiv);
   content.appendChild(titleDiv);
   content.appendChild(textDiv);
   textDiv.appendChild(firstHalf);
