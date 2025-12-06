@@ -1,7 +1,7 @@
 :root {
     /* Background colors */
     --main-background-gray1: #959595;
-
+    --nav-background-gray: gray;
     /* Text colors */
 
     /* Shadow colors */
@@ -15,6 +15,7 @@
 body {
     background-color: var(--main-background-gray1);
     color: white;
+    text-shadow: 1px 1px 1px #393b3a;
 }
 
 header {
@@ -34,9 +35,8 @@ nav {
     margin-bottom: 50px;
     height: 6vh;
     width: 100%;
-    background: gray;
+    background: var(--nav-background-gray);
     outline: none;
-    box-shadow: 0 1px 5px var(--shadow-white);
 
     .home {
         grid-column: 1 / 2;
@@ -51,15 +51,13 @@ nav {
 nav > button {
     border: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: var(--main-size1-5);
     background: gray;
 }
 
 .sticky {
     position: fixed;
     top: 0;
-    background: gray;
-
     button {
         background: gray;
     }
