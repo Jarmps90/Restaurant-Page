@@ -1,11 +1,16 @@
 :root {
     /* Background colors */
+
     --main-background-gray1: #959595;
     --nav-background-gray: gray;
+
+
     /* Text colors */
 
     /* Shadow colors */
+
     --shadow-white: white;
+
 
     /* Font sizes */
 
@@ -20,11 +25,21 @@ body {
 
 header {
     height: 60vh;
-    justify-items: center;
+    position: relative;
     align-content: end;
     background-image: url(/src/resorces/sergey-kotenev-qXrrbHUzmkE-unsplash.jpg);
     background-size: cover;
 
+    .logo {
+        position:absolute;
+        background-image: url(resorces/beef\'n_resto.png);
+        background-size: contain;
+        width: 30vh;
+        height: 10vh;
+        bottom: 50px;
+        left: 50px;
+        font-size: var(--main-size1-5);
+    }
 
 }
 
