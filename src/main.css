@@ -15,6 +15,10 @@
     /* Font sizes */
 
     --main-size1-5: 1.5rem;
+
+    /* Font Shadows */
+
+    --text-shadow-black1: 2px 2px 5px black;
 }
 
 body {
@@ -30,15 +34,29 @@ header {
     background-image: url(/src/resorces/sergey-kotenev-qXrrbHUzmkE-unsplash.jpg);
     background-size: cover;
 
-    .logo {
+    .logoDiv {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
         position:absolute;
-        background-image: url(resorces/beef\'n_resto.png);
-        background-size: contain;
-        width: 30vh;
-        height: 10vh;
         bottom: 50px;
         left: 50px;
+        max-width: 30vh;
+        text-shadow: var(--text-shadow-black1);
         font-size: var(--main-size1-5);
+        align-items: start;
+
+
+    }
+
+    .logo   {
+        grid-row: 1 / 2;
+        height: 90px;
+        background-image: url(/src/resorces/beef_n_resto_red.png);
+        background-size: contain;
+    }
+
+    .headerText {
+        transform: rotate(-9deg);
     }
 
 }
