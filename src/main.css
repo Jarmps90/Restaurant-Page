@@ -107,6 +107,12 @@ nav > button {
     justify-items: center;
 }
 
+[class$='Inner'] {
+    background: grey;
+    padding: 10px;
+
+}
+
 
 /* Home */
 
@@ -119,7 +125,6 @@ nav > button {
 .mainInner {
     grid-column: 2 / 3;
     margin: 20px;
-    background: grey;
     padding: 20px;
 
 
@@ -137,7 +142,7 @@ nav > button {
     grid-template-rows: repeat(4, 1fr);
 }
 
-.outer {
+.menuOuter {
     display: grid;
     grid-template-columns: minmax(1px, 400px) minmax(100px, 200px) ;
 }
@@ -149,3 +154,8 @@ nav > button {
     background-size: contain;
 
 }
+
+
+
+
+/* Contacts */
