@@ -12,7 +12,8 @@ const contactButton = (function () {
 
 function contactPage() {
   const content = document.querySelector("#content");
-  const mainDiv = document.createElement("div");
+  const contactOuter = document.createElement('div');
+  const contactInner = document.createElement("div");
   const contactTitle = document.createElement("h1");
   const contactDiv = document.createElement("div");
   const nameDiv = document.createElement("div");
@@ -21,7 +22,8 @@ function contactPage() {
 
   content.innerHTML = "";
 
-  mainDiv.classList.add("mainDiv");
+  contactOuter.classList.add('contactOuter');
+  contactInner.classList.add("contactInner");
   contactDiv.classList.add("contactDiv");
   nameDiv.classList.add("name");
   telDiv.classList.add("tel");
@@ -32,9 +34,10 @@ function contactPage() {
   mailDiv.textContent = "E-mail: jarms.backburn@protonmail.ca";
   contactTitle.textContent = "Contact Us";
 
-  content.appendChild(mainDiv);
-  mainDiv.appendChild(contactTitle);
-  mainDiv.appendChild(contactDiv);
+  content.appendChild(contactOuter);
+  contactOuter.appendChild(contactInner);
+  contactInner.appendChild(contactTitle);
+  contactInner.appendChild(contactDiv);
   contactDiv.appendChild(nameDiv);
   contactDiv.appendChild(telDiv);
   contactDiv.appendChild(mailDiv);

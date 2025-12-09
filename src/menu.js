@@ -43,23 +43,23 @@ function createDish() {
   const displayDishes = () => {
     for (let i = 0; i < dishes.length; i++) {
       const menu = document.querySelector('.dishes');
-      const outerDiv = document.createElement('div');
-      const innerDiv = document.createElement('div');
+      const menuOuter = document.createElement('div');
+      const menuInner = document.createElement('div');
       const title = document.createElement('h2');
       const text = document.createElement('p');
       const img = document.createElement('div');
 
-      outerDiv.classList.add('outer');
-      innerDiv.classList.add('inner');
+      menuOuter.classList.add('menuOuter');
+      menuInner.classList.add('MenuInner');
       img.classList.add('img');
       title.textContent = dishes[i].title;
       text.textContent = dishes[i].text
 
-      innerDiv.appendChild(title);
-      innerDiv.appendChild(text);
-      outerDiv.appendChild(innerDiv);
-      outerDiv.appendChild(img);
-      menu.appendChild(outerDiv);
+      menuInner.appendChild(title);
+      menuInner.appendChild(text);
+      menuOuter.appendChild(menuInner);
+      menuOuter.appendChild(img);
+      menu.appendChild(menuOuter);
 
     };
   };

@@ -13,12 +13,14 @@ const aboutButton = (function () {
 
 function aboutPage() {
   const content = document.querySelector('#content');
-  const aboutDiv = document.createElement('div');
+  const aboutOuter = document.createElement('div');
+  const aboutInner = document.createElement('div');
   const aboutTitle = document.createElement('h1');
   const aboutText = document.createElement('div');
 
   content.innerHTML = '';
-  aboutDiv.classList.add('aboutDiv');
+  aboutOuter.classList.add('aboutOuter');
+  aboutInner.classList.add('aboutInner');
   aboutTitle.classList.add('aboutTitle');
   aboutText.classList.add('aboutText');
 
@@ -26,7 +28,8 @@ function aboutPage() {
   aboutText.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ullam!'
 
 
-  content.appendChild(aboutDiv);
-  aboutDiv.appendChild(aboutTitle);
-  aboutDiv.appendChild(aboutText);
+  content.appendChild(aboutOuter);
+  aboutOuter.appendChild(aboutInner);
+  aboutInner.appendChild(aboutTitle);
+  aboutInner.appendChild(aboutText);
 };
