@@ -2,6 +2,7 @@ import "./main.css";
 import "./menu.js";
 import "./contact.js";
 import './about.js';
+import beefnResto from "./resorces/beef_n_resto_red.png"
 
 
 const homeButton = (function () {
@@ -21,7 +22,7 @@ function generateIndexPage() {
   const header = document.querySelector('header');
 
   const logoDiv = document.createElement('div');
-  const logo = document.createElement('div');
+  const logo = document.createElement('img');
   const headerText = document.createElement('div');
 
   const outerContainer = document.createElement('div')
@@ -45,10 +46,10 @@ function generateIndexPage() {
   headerText.classList.add('headerText')
 
   headerText.textContent = 'It’s time to enjoy the finer things in life.'
-
+  logo.src = beefnResto;
   title.textContent = "Welcome to Beef n resto";
-  firstHalf.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia praesentium quod fugiat explicabo animi ut quaerat ullam. Voluptas sed exercitationem excepturi qui quae quaerat ipsum cumque sunt doloremque velit!'
-  secondHalf.textContent = ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio tenetur fuga dolor quidem recusandae earum temporibus quam cupiditate exercitationem.';
+  firstHalf.textContent = "We are pleased to have you join us for an unforgettable dining experience. Our menu features classic and contemporary cuisine, with something to satisfy every palate."
+  secondHalf.textContent = "Whether you're looking for a quick bite or a leisurely meal, we promise that your taste buds will be delighted by our delectable offerings. We look forward to seeing you soon!"
 
   header.appendChild(logoDiv);
   logoDiv.appendChild(headerText);
