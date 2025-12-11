@@ -7,6 +7,8 @@
 
     /* Text colors */
 
+    --text-color-white: white;
+
     /* Shadow colors */
 
     --shadow-white: white;
@@ -27,7 +29,7 @@
 
 body {
     background-color: var(--main-background-gray1);
-    color: white;
+    color: var(--text-color-white);
     text-shadow: 1px 1px 1px #393b3a;
 }
 
@@ -55,8 +57,6 @@ header {
     .logo   {
         grid-row: 1 / 2;
         height: 90px;
-        background-image: url(/src/resorces/beef_n_resto_red.png);
-        background-size: cover;
     }
 
     .headerText {
@@ -152,9 +152,6 @@ nav > button {
 .img {
     height: 180px;
     width: 200px;
-    /*background-image: url(/src/resorces/beef\'n_resto_tilted.png);
-    background-size: contain;*/
-
 }
 
 .menu-title {
@@ -165,3 +162,10 @@ nav > button {
 
 
 /* Contacts */
+
+
+/* About us*/
+
+.aboutOuter {
+    width: 50vh;
+}
