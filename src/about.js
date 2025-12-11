@@ -25,8 +25,7 @@ function aboutPage() {
   aboutText.classList.add('aboutText');
 
   aboutTitle.textContent = 'About Us';
-  aboutText.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ullam!'
-
+  aboutText.textContent = "Our restaurant is more than just a place to eat - it's an experience that will leave you feeling satisfied and refreshed. We pride ourselves on our attention to detail, from the freshest ingredients used in each dish to the welcoming atmosphere we create for all of our guests. Our team works hard to ensure that every customer has a memorable and enjoyable visit with us, and we look forward to seeing you soon!";
 
   content.appendChild(aboutOuter);
   aboutOuter.appendChild(aboutInner);
