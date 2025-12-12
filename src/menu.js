@@ -1,5 +1,3 @@
-import beefWellingtonImg from './resorces/loija-nguyen-Lf2dvyS-d2E-unsplash.jpg';
-import beefStirFryImg from './resorces/davis-dai-qKPKDb4_W24-unsplash.jpg';
 
 const menuButton = (function () {
   const navBar = document.querySelector("nav");
@@ -30,17 +28,17 @@ function menuPage() {
 };
 
 class Dish {
-  constructor(title, text, img) {
+  constructor(title, text, price) {
     this.title = title;
     this.text = text;
-    this.img = img;
+    this.price = price;
   };
 };
 
 function createDish() {
   const dishes = [];
-  const beefWellington = new Dish('Beef Wellington', 'Baked steak dish made out of fillet steak and duxelles wrapped in shortcrust pastry', beefWellingtonImg);
-  const chineseBeefStirFry = new Dish('Beef Stir Fry', 'This Beef Stir Fry is made with a simple but super flavourful, classic stir fry sauce.', beefStirFryImg);
+  const beefWellington = new Dish('Beef Wellington', 'Baked steak dish made out of fillet steak and duxelles wrapped in shortcrust pastry');
+  const chineseBeefStirFry = new Dish('Beef Stir Fry', 'This Beef Stir Fry is made with a simple but super flavourful, classic stir fry sauce.');
 
   dishes.push(beefWellington, chineseBeefStirFry);
 
@@ -51,20 +49,20 @@ function createDish() {
       const menuInner = document.createElement('div');
       const title = document.createElement('h2');
       const text = document.createElement('p');
-      const img = document.createElement('img');
+
 
       title.classList.add('dish-title');
       menuOuter.classList.add('menuOuter');
       menuInner.classList.add('MenuInner');
-      img.classList.add('img');
+
       title.textContent = dishes[i].title;
       text.textContent = dishes[i].text
-      img.src = dishes[i].img;
+
 
       menuInner.appendChild(title);
       menuInner.appendChild(text);
       menuOuter.appendChild(menuInner);
-      menuOuter.appendChild(img);
+
       menu.appendChild(menuOuter);
 
     };
