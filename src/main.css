@@ -92,7 +92,7 @@ nav {
 
 nav > button {
     border: none;
-    color: white;
+    color: var(--text-color-white);
     font-size: var(--main-size1-5);
     background: gray;
     text-shadow: var(--text-shadow-black1);
@@ -112,28 +112,26 @@ nav > button {
     margin-top: 50px;
     justify-items: center;
     font-size: var(--main-size1-2);
+    margin-bottom: 150px;
+
 }
 
 [class$='Inner'] {
     background: grey;
-    padding: 10px;
+    padding: 20px;
+}
 
-
+[class$='title'] {
+    margin-top: 0;
 }
 
 
 /* Home */
 
-.mainOuter {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-}
-
 .mainInner {
-    grid-column: 2 / 3;
     margin: 20px;
     padding: 20px;
+    width: 50vw;
 
 
 }
@@ -151,21 +149,18 @@ nav > button {
     gap: 20px;
 }
 
-.menuOuter {
-    display: grid;
-    grid-template-columns: minmax(1px, 400px) minmax(100px, 200px) ;
-}
-
-.img {
-    height: 180px;
-    width: 200px;
-}
 
 .menu-title {
     margin-bottom: 50px;
 }
 
+.menuInner > p {
+    margin: 5px;
+}
 
+.dish-title {
+    margin: 15px ;
+}
 
 
 /* Contacts */
@@ -174,6 +169,6 @@ nav > button {
 /* About us*/
 
 .aboutOuter {
-    width: 50vh;
-    margin-bottom: 100px;
+    width: 50vw;
+
 }
