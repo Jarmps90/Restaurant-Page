@@ -16,7 +16,7 @@ function menuPage() {
   const title = document.createElement("h1");
   const menuDishes = document.createElement("div");
 
-  title.classList.add('menu-title');
+
   title.textContent = "Menu";
   menuDishes.classList.add("dishes");
 
@@ -37,8 +37,8 @@ class Dish {
 
 function createDish() {
   const dishes = [];
-  const beefWellington = new Dish('Beef Wellington', 'Baked steak dish made out of fillet steak and duxelles wrapped in shortcrust pastry');
-  const chineseBeefStirFry = new Dish('Beef Stir Fry', 'This Beef Stir Fry is made with a simple but super flavourful, classic stir fry sauce.');
+  const beefWellington = new Dish('Beef Wellington', 'Baked steak dish made out of fillet steak and duxelles wrapped in shortcrust pastry', 12);
+  const chineseBeefStirFry = new Dish('Beef Stir Fry', 'This Beef Stir Fry is made with a simple but super flavourful, classic stir fry sauce.', 7);
 
   dishes.push(beefWellington, chineseBeefStirFry);
 
@@ -49,18 +49,21 @@ function createDish() {
       const menuInner = document.createElement('div');
       const title = document.createElement('h2');
       const text = document.createElement('p');
+      const price = document.createElement('p');
 
 
       title.classList.add('dish-title');
       menuOuter.classList.add('menuOuter');
-      menuInner.classList.add('MenuInner');
+      menuInner.classList.add('menuInner');
 
       title.textContent = dishes[i].title;
-      text.textContent = dishes[i].text
+      text.textContent = dishes[i].text;
+      price.textContent = `Price: ${dishes[i].price}`;
 
 
       menuInner.appendChild(title);
       menuInner.appendChild(text);
+      menuInner.appendChild(price);
       menuOuter.appendChild(menuInner);
 
       menu.appendChild(menuOuter);

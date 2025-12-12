@@ -21,7 +21,7 @@ function aboutPage() {
   content.innerHTML = '';
   aboutOuter.classList.add('aboutOuter');
   aboutInner.classList.add('aboutInner');
-  aboutTitle.classList.add('aboutTitle');
+  aboutTitle.classList.add('about-title');
   aboutText.classList.add('aboutText');
 
   aboutTitle.textContent = 'About Us';

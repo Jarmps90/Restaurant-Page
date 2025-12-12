@@ -22,6 +22,7 @@ function contactPage() {
 
   content.innerHTML = "";
 
+  contactTitle.classList.add('contact-title');
   contactOuter.classList.add('contactOuter');
   contactInner.classList.add("contactInner");
   contactDiv.classList.add("contactDiv");
