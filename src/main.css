@@ -17,20 +17,26 @@
     /* Font sizes */
 
     --main-size1-5: 1.5rem;
+    --main-size1-2: 1.2rem;
+
 
     /* Font Shadows */
 
     --text-shadow-black1: 1px 1px 2px black;
+
 
     /* Box shadow */
 
     --box-shadow-2px-black: 2px 2px 2px black;
 }
 
+
+
 body {
     background-color: var(--main-background-gray1);
     color: var(--text-color-white);
     text-shadow: 1px 1px 1px #393b3a;
+
 }
 
 header {
@@ -105,6 +111,7 @@ nav > button {
 #content {
     margin-top: 50px;
     justify-items: center;
+    font-size: var(--main-size1-2);
 }
 
 [class$='Inner'] {
@@ -168,4 +175,5 @@ nav > button {
 
 .aboutOuter {
     width: 50vh;
+    margin-bottom: 100px;
 }
