@@ -3,7 +3,7 @@
 
     --main-background-gray1: #959595;
     --nav-background-gray: gray;
-
+    --background-gray2: #787878;
 
     /* Text colors */
 
@@ -23,7 +23,7 @@
     /* Font Shadows */
 
     --text-shadow-black1: 1px 1px 2px black;
-
+    --text-shadow-grey: 1px 1px 1px #393b3a;
 
     /* Box shadow */
 
@@ -35,7 +35,7 @@
 body {
     background-color: var(--main-background-gray1);
     color: var(--text-color-white);
-    text-shadow: 1px 1px 1px #393b3a;
+    text-shadow: var(--text-shadow-grey);
 
 }
 
@@ -94,7 +94,7 @@ nav > button {
     border: none;
     color: var(--text-color-white);
     font-size: var(--main-size1-5);
-    background: gray;
+    background: var(--nav-background-gray);
     text-shadow: var(--text-shadow-black1);
 }
 
@@ -102,7 +102,7 @@ nav > button {
     position: fixed;
     top: 0;
     button {
-        background: gray;
+        background: var(--nav-background-gray);
     }
 }
 
@@ -117,7 +117,8 @@ nav > button {
 }
 
 [class$='Inner'] {
-    background: grey;
+    background: var(--background-gray2);
+
     padding: 20px;
 }
 
@@ -145,22 +146,16 @@ nav > button {
 
 .dishes {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-auto-rows: min-content;
+    grid-template-columns: minmax(700px, 50em);
     gap: 20px;
-}
 
-
-.menu-title {
-    margin-bottom: 50px;
 }
 
 .menuInner > p {
     margin: 5px;
 }
 
-.dish-title {
-    margin: 15px ;
-}
 
 
 /* Contacts */
