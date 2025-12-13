@@ -39,8 +39,9 @@ function createDish() {
   const dishes = [];
   const beefWellington = new Dish('Beef Wellington', 'Baked steak dish made out of fillet steak and duxelles wrapped in shortcrust pastry', 12);
   const chineseBeefStirFry = new Dish('Beef Stir Fry', 'This Beef Stir Fry is made with a simple but super flavourful, classic stir fry sauce.', 7);
-
-  dishes.push(beefWellington, chineseBeefStirFry);
+  const chipotleBeefCasserole = new Dish('Chipotle Beef Casserole', 'Discover the bold flavours of this Chipotle Beef Casserole, a hearty dish combining tender beef with smoky chipotle spices.', 9);
+  const steakWithRedOnions = new Dish('Sliced Steak with Caramelised Red Onions', 'Are you looking for a new steak and onion dish? This succulent steak, with the sweetness of caramelised red onions, can be on your table in 30 minutes.', 10);
+  dishes.push(beefWellington, chineseBeefStirFry, chipotleBeefCasserole, steakWithRedOnions);
 
   const displayDishes = () => {
     for (let i = 0; i < dishes.length; i++) {
