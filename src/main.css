@@ -167,3 +167,17 @@ nav > button {
     width: 50vw;
 
 }
+
+header > .serg {
+    justify-self: end;
+    font-size: 0.5rem;
+
+    a:link {
+        color: var(--text-color-white);
+        text-decoration-line: none;
+    }
+
+    a:visited {
+        color: var(--text-color-white);
+    }
+}
